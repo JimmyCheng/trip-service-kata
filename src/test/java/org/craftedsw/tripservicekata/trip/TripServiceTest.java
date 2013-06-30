@@ -68,13 +68,11 @@ public class TripServiceTest {
 
 		@Override
 		protected User getLoggedUser() {
-			// TODO Auto-generated method stub
 			return loggedInUser;
 		}
 
 		@Override
 		protected List<Trip> tripsBy(User user) {
-			// TODO Auto-generated method stub
 			return user.trips();
 		}
 
