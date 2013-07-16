@@ -7,28 +7,28 @@ import org.craftedsw.tripservicekata.trip.Trip;
 
 public class User {
 
-	private List<Trip> trips = new ArrayList<Trip>();
-	private List<User> friends = new ArrayList<User>();
-	
-	public List<User> getFriends() {
-		return friends;
-	}
-	
-	public void addFriend(User user) {
-		friends.add(user);
-	}
+    private List<Trip> trips = new ArrayList<Trip>();
+    private List<User> friends = new ArrayList<User>();
 
-	public void addTrip(Trip trip) {
-		trips.add(trip);
-	}
-	
-	public List<Trip> trips() {
-		return trips;
-	}
+    public List<User> getFriends() {
+        return friends;
+    }
 
-	public Boolean isFriendWith(User allen) {
-		// TODO Auto-generated method stub
-		return friends.contains(allen);
-	}
+    public void addFriend(User user) {
+        friends.add(user);
+    }
+
+    public void addTrip(Trip trip) {
+        trips.add(trip);
+    }
+
+    public List<Trip> trips() {
+        return trips;
+    }
+
+    public Boolean isFriendWith(User allen) {
+        // TODO Auto-generated method stub
+        return friends.contains(allen);
+    }
 
 }
